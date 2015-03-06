@@ -494,7 +494,7 @@ header .sticky-nav.stuck {
 	left: 0;
 	z-index: 1001;
 	background: #0a0c0e;
-	opacity:0.8;
+	opacity:0.95;
 }
 
 header #logo {
