@@ -713,7 +713,8 @@ nav#menu #menu-nav li a:hover {
 }
 
 .item-thumbs a + img {
-	width: 100%;	
+	width: 100%;
+	height:200px;
 }
 
 .item-thumbs .hover-wrap {
@@ -991,21 +992,41 @@ nav#menu #menu-nav li a:hover {
 
 
 /* ==================================================
-   Twitter Feed
+   Github Feed
 ================================================== */
 
-#twitter-feed {
+#github-feed {
 	padding: 100px 0 90px;
 	text-align: center;	
 }
 
-#twitter-feed .follow {
+#github-feed .follow {
 	position: absolute;
 	bottom: 30px;
 	left: 50%;
 	margin-left: -8px;
 	font-size: 16px;	
 }
+#img-github{
+	text-decoration: none;
+	list-style: outside none none;
+	background: url(../img/supersized/github.png) no-repeat scroll 0 0 transparent;
+	width:90px;
+	height:90px;
+	transition: all 400ms ease-out 0s;
+	transform: rotateY(0deg);
+	opacity: 0.75;
+}
+#img-github:hover {
+	transition: all 800ms ease-out 0s;
+	transform: rotateY(360deg);
+	background: url(../img/supersized/github.png) no-repeat scroll 0 0 #DE5E60;
+	color:#DE5E60;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 1.5;
+}
+
 
 #ticker .tweet_list {
 	margin: 0;
