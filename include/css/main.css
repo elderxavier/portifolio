@@ -1,16 +1,7 @@
 /*
-Theme Name: Brushed 
-Theme URI: http://www.themes.alessioatzeni.com/html/brushed/
-Author: Alessio Atzeni
-Author URI: http://www.alessioatzeni.com
-Description: Personal Website and Portfolio of Alessio Atzeni
-Version: 1.0
+Author: Elder Xavier
+Version: 1.5.2
 */
-
-
-/* ==================================================
-   Basic Styles
-================================================== */
 
 html, body {
 	height: 100%;
@@ -1003,7 +994,7 @@ nav#menu #menu-nav li a:hover {
 #github-feed .follow {
 	position: absolute;
 	bottom: 30px;
-	left: 50%;
+	left: 46.9%;
 	margin-left: -8px;
 	font-size: 16px;	
 }
@@ -1061,6 +1052,7 @@ nav#menu #menu-nav li a:hover {
 
 #social-area {
     text-align: center;
+	display:none;
 }
 
 #social-area #social ul {
@@ -1152,7 +1144,8 @@ footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: #26292E;
+	/*background: #26292E;*/
+	background:#2F3238;
 	text-align: center;
 	z-index: 99;
 }
@@ -1401,4 +1394,71 @@ footer .credits {
       -ms-transition: none;
        -o-transition: none;
           transition: none;
+}
+
+#image-progess {
+	display:none;
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	top: 180px;
+	left: 49%;
+	background: url("../img/supersized/progress.gif") 35px 35px no-repeat;
+	z-index: 9991;	
+}
+
+#mascara{
+	display:none;
+	position: fixed;	
+	top: 0;
+	background: #000;
+	z-index: 9990;
+}
+#msg-box{
+	color: #FFF;
+	display:none;
+	text-align: center;
+	position: fixed;	
+	top: 200px;
+	/*left:50px;*/
+	/*width:150px;*/
+	background: #A9A9A9;
+	z-index: 9991;
+	padding-top: 20px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #000;	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;	
+	-webkit-box-shadow: 10px 10px 5px #000;
+	-moz-box-shadow: 10px 10px 5px #000;	
+}
+
+#msg-box-a{	
+	background: #3C3F45;
+	color: #23262C;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 16px 40px;
+	text-align: center;
+	vertical-align: middle;
+	width: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+	-moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+	-o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+	transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+#msg-box-a:hover{
+	background: #DE5E60;
+    color: #FFFFFF;
+}
+
+/*validator style*/
+.validation-advice{
+	border: 1px solid #FF0000 !important;
+	background: #696969!important;
 }
