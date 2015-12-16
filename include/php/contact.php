@@ -1,4 +1,7 @@
 <?php
+/*
+* Contact Form Class
+*/
 
 
 header('Cache-Control: no-cache, must-revalidate');
@@ -97,7 +100,6 @@ class Contact_Form{
 		echo json_encode($response);
 	}
 }
-
 /*
 $datathis = array();
 $datathis['name'] = 'elder Xavier';

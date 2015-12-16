@@ -1,204 +1,69 @@
 /*
 Author: Elder Xavier
-Version: 1.5.2
+Version: 1.5.3
 */
+html, body {height: 100%}
+html, hmtl a{width:100%;font-size: 100%; -webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%}
 
-html, body {
-	height: 100%;
-}
+body{ background:#2F3238; color:#7F8289; font-weight:300; font-size:16px; font-family: 'Titillium Web', sans-serif; line-height:28px}
+a{color:#DE5E60; text-decoration: none; cursor: pointer; -webkit-transition: color 0.1s linear 0s; -moz-transition: color 0.1s linear 0s; -o-transition: color 0.1s linear 0s; transition: color 0.1s linear 0s}
 
-html, hmtl a{
-	width:100%;
-	font-size: 100%; 
-	-webkit-text-size-adjust: 100%; 
-	-ms-text-size-adjust: 100%;
-}
+a:hover, a:active, a:focus{ outline: 0;	color:#FFFFFF;text-decoration:none}
 
-body{
-	background:#2F3238;
-	color:#7F8289;
-	font-weight:300;
-	font-size:16px;
-	font-family: 'Titillium Web', sans-serif;
-	line-height:28px;
-}
+a img {	border: none}
+a > img {vertical-align: bottom}
 
+img {max-width: none}
 
-a{
-	color:#DE5E60;
-	text-decoration: none;
-	cursor: pointer;
-	
-	-webkit-transition: color 0.1s linear 0s;	
-	   -moz-transition: color 0.1s linear 0s;
-		 -o-transition: color 0.1s linear 0s;
-		    transition: color 0.1s linear 0s;
-}
+strong {font-weight: 500}
 
-a:hover,
-a:active,
-a:focus{
-	outline: 0;
-	color:#FFFFFF;
-	text-decoration:none;
-}
+p {margin: 0 0 30px}
 
-a img {
-	border: none;
-}
+hr { border-style: dashed; border-color: #3C3F45; border-bottom: none; border-left: none; border-right: none; margin: 50px 0}
 
-a > img {
-	vertical-align: bottom;	
-}
+.align_left{float:left;	margin:0 25px 0 0px!important}
 
-img {
-	max-width: none;	
-}
+.align_right{float:right;margin:0 0 0 25px!important}
 
-strong {
-  	font-weight: 500;
-}
+.text_align_left {text-align: left}
 
-p {
-	margin: 0 0 30px;
-}
+.text_align_center {text-align: center}
 
-hr {
-	border-style: dashed;
-	border-color: #3C3F45;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	margin: 50px 0;	
-}
+.text_align_right {text-align: right}
 
-.align_left{
-	float:left;
-	margin:0 25px 0 0px!important;
-}
+.color-text {color: #DE5E60}
 
-.align_right{
-	float:right;
-	margin:0 0 0 25px!important;
-}
+.through{text-decoration:line-through}
 
-.text_align_left {
-	text-align: left;
-}
+input, button, select, textarea {font-weight: 300;font-family: 'Titillium Web', sans-serif;outline: 0}
 
-.text_align_center {
-	text-align: center;
-}
+input:focus, textarea:focus, input[type="text"]:focus {	outline: 0}
 
-.text_align_right {
-	text-align: right;	
-}
+input:-moz-placeholder, textarea:-moz-placeholder {color: #7F8289}
 
-.color-text {
-    color: #DE5E60;
-}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #7F8289}
 
-.through{
-	text-decoration:line-through;
-}
-
-input, button, select, textarea {
-	font-weight: 300;
-	font-family: 'Titillium Web', sans-serif;
-	outline: 0;
-}
-
-input:focus, 
-textarea:focus,
-input[type="text"]:focus {
-	outline: 0;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #7F8289;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #7F8289;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #7F8289;
-}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #7F8289}
 
 /* ==================================================
    Code and Pre
 ================================================== */
 
-code,
-pre {
-  	padding: 0 3px 2px;
-  	-webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
-  	color: #232527;
-  	font-size: 12px;
-  	font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
-}
+code, pre { padding: 0 3px 2px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #232527; font-size: 12px; font-family: Monaco, Menlo, Consolas, "Courier New", monospace}
 
-code {
-  	padding: 2px 4px;
-  	border: 1px solid #dde4e9;
-  	background-color: #F6F6F6;
-  	color: #232527;
-  	white-space: nowrap;
-}
+code { padding: 2px 4px; border: 1px solid #dde4e9; background-color: #F6F6F6; color: #232527; white-space: nowrap}
 
-pre {
-  	display: block;
-  	margin: 70px 50px;
-  	padding: 30px;
-  	border: 1px solid #dde4e9;
-  	-webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-  	background-color: #FCFCFC;
-  	white-space: pre;
-  	white-space: pre-wrap;
-  	word-wrap: break-word;
-  	word-break: break-all;
-  	font-size: 12px;
-  	line-height: 20px;
-}
+pre { display: block; margin: 70px 50px; padding: 30px; border: 1px solid #dde4e9; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; background-color: #FCFCFC; white-space: pre; white-space: pre-wrap; word-wrap: break-word; word-break: break-all; font-size: 12px; line-height: 20px}
 
-pre code {
-  	padding: 0;
-  	border: 0;
-  	background-color: transparent;
-  	color: inherit;
-  	white-space: pre;
-  	white-space: pre-wrap;
-}
+pre code { padding: 0; border: 0; background-color: transparent; color: inherit; white-space: pre; white-space: pre-wrap}
 
-.pre-scrollable {
-  	overflow-y: scroll;
-  	max-height: 340px;
-}
+.pre-scrollable { overflow-y: scroll; max-height: 340px; }
 
 /* ==================================================
    Typography
 ================================================== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-	margin:0 0 20px 0;
-	color:#FFFFFF;
-	font-weight:300;
-	font-family: 'Titillium Web', sans-serif;
-	line-height:1.5em;
-}
+h1, h2, h3, h4, h5, h6{ margin:0 0 20px 0; color:#FFFFFF; font-weight:300; font-family: 'Titillium Web', sans-serif; line-height:1.5e}
 
 h1{
 	font-size:48px;
@@ -1007,6 +872,7 @@ nav#menu #menu-nav li a:hover {
 	transition: all 400ms ease-out 0s;
 	transform: rotateY(0deg);
 	opacity: 0.75;
+        line-height: 20px;
 }
 #img-github:hover {
 	transition: all 800ms ease-out 0s;
